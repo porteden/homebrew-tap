@@ -5,21 +5,21 @@
 class Porteden < Formula
   desc "Calendar firewall & management CLI for PortEden"
   homepage "https://porteden.com"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/porteden/cli/releases/download/v0.3.0/porteden_0.3.0_darwin_amd64.tar.gz"
-      sha256 "e0bd5c0243fabb119ef7083fc5de5e5e0c0575ad33f100e46f956263452e0676"
+      url "https://github.com/porteden/cli/releases/download/v0.3.1/porteden_0.3.1_darwin_amd64.tar.gz"
+      sha256 "dbf4c66af5184681847620de14f4aff44609ca349fd4854247011e4b185e9b8d"
 
       def install
         bin.install "porteden"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/porteden/cli/releases/download/v0.3.0/porteden_0.3.0_darwin_arm64.tar.gz"
-      sha256 "76c9b6102f5bd2f5d0224a6882fbac2e69029b110ef5025ab43f07c89e77eb89"
+      url "https://github.com/porteden/cli/releases/download/v0.3.1/porteden_0.3.1_darwin_arm64.tar.gz"
+      sha256 "a180dcd1d77c0fdd392584727690e439158b42fae3756438acdb82d85172dc80"
 
       def install
         bin.install "porteden"
@@ -29,15 +29,15 @@ class Porteden < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/porteden/cli/releases/download/v0.3.0/porteden_0.3.0_linux_amd64.tar.gz"
-      sha256 "06757f379baba2b28a548b54e172b817de2e247651c843dfd99549189d6be34c"
+      url "https://github.com/porteden/cli/releases/download/v0.3.1/porteden_0.3.1_linux_amd64.tar.gz"
+      sha256 "698bb2a57754d40eac15e757e45809c596347815f7296bb02bcbc7c7504b60b9"
       def install
         bin.install "porteden"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/porteden/cli/releases/download/v0.3.0/porteden_0.3.0_linux_arm64.tar.gz"
-      sha256 "c350ff6b56f7ff80a969d124def7ad2aa7a469d4b1138b10098096fc5e163dd5"
+      url "https://github.com/porteden/cli/releases/download/v0.3.1/porteden_0.3.1_linux_arm64.tar.gz"
+      sha256 "2aa686cdd50b99ab89ff0c48455adfe421f93b932915e3d3788271dce4c1f36f"
       def install
         bin.install "porteden"
       end
