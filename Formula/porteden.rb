@@ -5,21 +5,21 @@
 class Porteden < Formula
   desc "Calendar firewall & management CLI for PortEden"
   homepage "https://porteden.com"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/porteden/cli/releases/download/v0.2.0/porteden_0.2.0_darwin_amd64.tar.gz"
-      sha256 "b8bd05eeca135a0628debc12182ffee6c7d85be6a3be1df9c368a34740b26eda"
+      url "https://github.com/porteden/cli/releases/download/v0.2.1/porteden_0.2.1_darwin_amd64.tar.gz"
+      sha256 "0149da98ea6a6f7d4a1ee5d044c5ad0e891163ef175e5d6a82a1237f05a58521"
 
       define_method(:install) do
         bin.install "porteden"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/porteden/cli/releases/download/v0.2.0/porteden_0.2.0_darwin_arm64.tar.gz"
-      sha256 "e81b41ced8458dfd2b1b0126c9529b61c5aefbe07433692e5b2a20918b1aef21"
+      url "https://github.com/porteden/cli/releases/download/v0.2.1/porteden_0.2.1_darwin_arm64.tar.gz"
+      sha256 "ae825ace6822d66bcbcb635790c1ec52b84faefb3068fea34e2c1d2afbfa96a7"
 
       define_method(:install) do
         bin.install "porteden"
@@ -29,15 +29,15 @@ class Porteden < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/porteden/cli/releases/download/v0.2.0/porteden_0.2.0_linux_amd64.tar.gz"
-      sha256 "750410b471ed52fc0b3c67b9801ad08e74b4964df65b1f7b6feb1b0da5459e32"
+      url "https://github.com/porteden/cli/releases/download/v0.2.1/porteden_0.2.1_linux_amd64.tar.gz"
+      sha256 "19ba423472473994a9dd679e279a899bb703600853722887bdf9489160431594"
       define_method(:install) do
         bin.install "porteden"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/porteden/cli/releases/download/v0.2.0/porteden_0.2.0_linux_arm64.tar.gz"
-      sha256 "7e0efd118dd3c4b4b2047d0294bc64c70f500a0a468bfcfd029f43ca4516860a"
+      url "https://github.com/porteden/cli/releases/download/v0.2.1/porteden_0.2.1_linux_arm64.tar.gz"
+      sha256 "b5eb56fd238202e6d2fb7ac10adc9e6cddbfa8e76559835e5891140b84aa5bf7"
       define_method(:install) do
         bin.install "porteden"
       end
