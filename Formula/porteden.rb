@@ -11,7 +11,7 @@ class Porteden < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/porteden/cli/releases/download/v0.3.0/porteden_0.3.0_darwin_amd64.tar.gz"
-      sha256 "67168113f68043e507254b56a68864ab683249bd950b6f9e157e3fdfa84f4063"
+      sha256 "622d1f94613f0054ce9a30864cfd99ae54bad32c692472a7fd5c86b6c2828b2e"
 
       define_method(:install) do
         bin.install "porteden"
@@ -19,7 +19,7 @@ class Porteden < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/porteden/cli/releases/download/v0.3.0/porteden_0.3.0_darwin_arm64.tar.gz"
-      sha256 "4787b5a8ce3a9a3f47620ee24ea6d21691c6bddb07cad47bac74ac6128ce9cfc"
+      sha256 "5c334b0f8bd9d8825f13a316a852e6bf93f4257240e4ed19985fe57570d29341"
 
       define_method(:install) do
         bin.install "porteden"
@@ -30,14 +30,14 @@ class Porteden < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/porteden/cli/releases/download/v0.3.0/porteden_0.3.0_linux_amd64.tar.gz"
-      sha256 "02d136e81468bb060bb923e6f3356a18994e81861e305edf7483a281c86b5a60"
+      sha256 "9efd459f676bf8a91ad1a52600534386ddc395ee1c1915562ccdf8438b3023d6"
       define_method(:install) do
         bin.install "porteden"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/porteden/cli/releases/download/v0.3.0/porteden_0.3.0_linux_arm64.tar.gz"
-      sha256 "b93952a5190feeab4e93ca3292e043a5ec1bd922a33dc544f78241baf5a83440"
+      sha256 "85b2089d2c727e4800586fc6a675d4446878d68e30ec67225afd19002dbb66ff"
       define_method(:install) do
         bin.install "porteden"
       end
